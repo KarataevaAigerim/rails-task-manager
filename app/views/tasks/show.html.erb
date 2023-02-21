@@ -1,0 +1,19 @@
+<div class = "container">
+  <h1><%= @task.title %></h1>
+
+    <p><%= @task.details %></p>
+  <div class = "box">
+    <p><%= link_to 'Edit', edit_task_path(@task) %></p>
+  </div>
+
+  <div class = "box">
+    <%= link_to "Delete",
+      task_path(@task),
+      data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+    %>
+  </div>
+
+  <div class = "box">
+    <%= link_to "Back to list", tasks_path %>
+  </div>
+</div>

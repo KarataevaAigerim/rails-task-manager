@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  font-family: open-sans, sans-serif;
+  font-size: 25px;
+  background-color: rgb(246, 245, 236);
+  margin: 0;
+ }
+ .container {
+  padding: 100px;
+ }
+
+ a {
+  color: grey;
+  text-decoration: none;
+ }
+
+ a:visited {
+  text-decoration: none;
+  color: black;
+ }
+ a:hover {
+  color: rgb(176, 206, 242);
+  transition: .3s;
+  animation: ease-in;
+ }
+
+ ul {
+  list-style-type: none;
+ }
+
+ .form {
+  box-sizing: border-box;
+ }
